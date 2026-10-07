@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#d6001c">
+<title>TelorIjo Server - Minecraft Indonesia</title>
+<meta name="description" content="Server Minecraft Bedrock & Java TelorIjo! Join sekarang dan main survival seru bareng!">
+<link rel="icon" href="favicon.ico">
+<meta property="og:title" content="TelorIjo Server - Minecraft Indonesia">
+<meta property="og:description" content="Server Minecraft Bedrock & Java TelorIjo! Join sekarang dan main survival seru bareng!">
+<meta property="og:url" content="https://telorijo.web.id">
+<meta property="og:image" content="https://telorijo.web.id/og-image.png">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko:wght@500;600;700&family=Montserrat:wght@500;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-intro">
+<div class="bg"></div><div id="stars" aria-hidden="true"></div><div class="bgv"></div><div class="prog" id="prog"></div>
+<div id="flash" class="flash"></div><div id="wipe" class="wipe"><i></i><i></i><i></i></div><div id="fx" class="fx"></div>
+
+<!-- INTRO -->
+<div id="intro" class="intro">
+  <div class="intro-burst"></div>
+  <div class="intro-in">
+    <img src="assets/logo.png" alt="" class="intro-logo" onerror="this.remove()">
+    <p class="itag sk">SERVER MINECRAFT INDONESIA</p>
+    <h1 class="ransom xl" data-ransom="TELORIJO" aria-label="TelorIjo"></h1>
+    <button id="start" class="btn btn-w big press">PRESS START</button>
+    <p class="hint">Klik atau tekan <kbd>ENTER</kbd> • nyalakan suara biar lebih seru</p>
+  </div>
+  <div class="ticker small"><div class="band a"><div class="track" data-tk="intro"></div></div></div>
+</div>
+
+<div id="app" class="app">
+<header class="hdr">
+  <a href="#home" class="tag sk" data-nav="home"><img src="assets/logo.png" alt="" onerror="this.remove()">TELORIJO</a>
+  <nav class="nav" id="menu" aria-label="Menu">
+    <a href="#home" data-nav="home">Home</a><a href="#about" data-nav="about">About</a><a href="#join" data-nav="join">Cara Join</a>
+    <a href="#features" data-nav="features">Fitur</a><a href="#gallery" data-nav="gallery">Galeri</a><a href="#rules" data-nav="rules">Rules</a><a href="#team" data-nav="team">Team</a><a href="#faq" data-nav="faq">FAQ</a>
+  </nav>
+  <div class="hr">
+    <button class="btn btn-r sm press" data-open="playModal">MAIN</button>
+    <button class="btn btn-k sm" id="sfxBtn" aria-pressed="true" title="Efek suara">SFX ON</button>
+    <button class="btn btn-k sm burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+<div class="ticker"><div class="band a"><div class="track" data-tk="main"></div></div><div class="band b"><div class="track" data-tk="alt"></div></div></div>
+
+<main>
+<!-- HERO -->
+<section id="home" class="sec hero">
+  <div class="hero-copy">
+    <span class="status sk h" style="--d:0"><i id="stDot"></i><span id="stText">Mengecek server…</span><b id="stPl"></b></span>
+    <h2 class="ransom lg h" data-ransom="TELORIJO" aria-label="TelorIjo" style="--d:1"></h2>
+    <p class="typer-line h sk" style="--d:2">Main <span id="typer"></span><span class="caret"></span></p>
+    <p class="desc h" style="--d:3">Server Minecraft modern untuk pemain yang suka kreatif, tantangan, dan komunitas. Bangun, jelajahi, dan taklukkan dunia unik bareng teman.</p>
+    <div class="row h" style="--d:4">
+      <button class="btn btn-r big press" data-open="playModal">▶ MAIN SEKARANG</button>
+      <a class="btn btn-w big press" id="discord" target="_blank" rel="noopener">DISCORD</a>
+      <button class="btn btn-k big press" data-open="rulesModal">RULES</button>
+    </div>
+    <button class="ipchip h press" style="--d:5" data-copy="both"><b>IP</b><code id="heroIp"></code><span class="cl">COPY</span></button>
+    <div class="row h" style="--d:6"><span class="px">JAVA</span><span class="px">BEDROCK</span><span class="px">CRACKED</span><span class="px">PREMIUM</span></div>
+  </div>
+  <figure class="frame hero-fig tilt h" style="--d:3" data-slot="assets/hero.png">
+    <img src="assets/hero.png" alt="Karakter TelorIjo" onerror="this.parentNode.classList.add('no-img')">
+    <span class="stk s1">★</span><span class="stk s2">✦</span>
+    <figcaption class="float-badge sk">JAVA &amp; BEDROCK</figcaption>
+  </figure>
+</section>
+
+<div class="ticker big" aria-hidden="true"><div class="band a"><div class="track" data-tk="big"></div></div></div>
+
+<section class="sec" id="stats"><div class="stats" id="statsBox"></div></section>
+
+<!-- ABOUT -->
+<section id="about" class="sec split">
+  <div class="rv"><div class="polaroid tilt">
+    <figure class="frame sq" data-slot="assets/about.jpg"><img src="assets/about.jpg" alt="Tentang TelorIjo" loading="lazy" onerror="this.parentNode.classList.add('no-img')"></figure>
+    <span class="pn">SINCE 2026</span><p class="pl">telorijo.web.id</p>
+  </div></div>
+  <div class="rv info" style="--d:120ms">
+    <span class="sub sk">TENTANG SERVER</span>
+    <h3>Selamat datang di <mark class="mb">TelorIjo</mark>, server Survival Multiplayer (SMP) dengan komunitas <mark class="mr">seru, suportif &amp; sehat</mark>.</h3>
+    <p>Mau jadi petualang santai, builder kompetitif, atau sekadar cari teman baru, TelorIjo punya tempat yang ramah untuk main Minecraft.</p>
+    <div class="chips"><span class="chip sk">FRIENDLY COMMUNITY</span><span class="chip r sk">FAIR PLAY</span><span class="chip sk">CUSTOM FEATURES</span></div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section id="join" class="sec">
+  <div class="rv sh"><h2 class="ransom md" data-ransom="CARA JOIN" aria-label="Cara Join"></h2><span class="sub sk">3 LANGKAH • CRACKED &amp; PREMIUM</span></div>
+  <div class="split">
+    <div class="rv ipbox"><div class="ipr"><small>SERVER IP</small><code id="jIp"></code><button class="btn btn-w sm press" data-copy="ip"><span class="cl">COPY</span></button></div>
+      <div class="ipr"><small>PORT</small><code id="jPort"></code><button class="btn btn-w sm press" data-copy="port"><span class="cl">COPY</span></button></div>
+      <button class="btn btn-r big press" data-copy="both"><span class="cl">COPY IP:PORT</span></button><a class="btn btn-k big press" id="direct">DIRECT JOIN (BEDROCK)</a></div>
+    <div class="rv tabs" id="tabs" style="--d:120ms"></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="sec">
+  <div class="rv sh"><h2 class="ransom md" data-ransom="FITUR" aria-label="Fitur"></h2><span class="sub sk">YANG BIKIN BETAH MAIN</span></div>
+  <div class="grid" id="feat"></div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="sec">
+  <div class="rv sh"><h2 class="ransom md" data-ransom="GALERI" aria-label="Galeri"></h2><span class="sub sk">POTRET DUNIA TELORIJO</span></div>
+  <div class="gal" id="gal"></div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="sec wide">
+  <div class="rv sh"><h2 class="ransom md" data-ransom="TEAM" aria-label="Team"></h2><span class="sub sk">STAFF, ADMIN &amp; PEMAIN TOP</span></div>
+  <div class="rows"><div class="band w"><div class="track" id="t1"></div></div><div class="band w"><div class="track rev" id="t2"></div></div></div>
+</section>
+
+<section id="rules" class="sec">
+  <div class="rv sh"><h2 class="ransom md" data-ransom="RULES" aria-label="Rules"></h2><span class="sub sk">ATURAN MAIN • BACA DULU</span></div>
+  <div class="grid" id="rulesGrid"></div>
+</section>
+
+<!-- FAQ + CTA -->
+<section id="faq" class="sec narrow">
+  <div class="rv sh"><h2 class="ransom md" data-ransom="FAQ" aria-label="FAQ"></h2><span class="sub sk">PERTANYAAN UMUM</span></div>
+  <div id="faqList"></div>
+  <div class="rv sh" style="margin-top:3.5rem"><h2 class="ransom md" data-ransom="GABUNG" aria-label="Gabung"></h2><span class="sub sk">KOMUNITAS &amp; LINK PENTING</span></div>
+  <div class="chs" id="cta"></div>
+</section>
+</main>
+
+<div class="grass" aria-hidden="true"></div>
+<footer class="foot">
+  <div class="fb"><img src="assets/logo.png" alt="" onerror="this.remove()"><b>Telorijo.web.id</b> • © 2026</div>
+  <div class="keys"><span><kbd>ESC</kbd> TUTUP</span><span id="clock"></span></div>
+</footer>
+</div>
+
+<button class="btn btn-k totop" id="toTop" aria-label="Ke atas">▲</button>
+<div class="lb" id="lb" hidden><img alt=""></div>
+
+<!-- MODAL PLAY -->
+<div class="mod" id="playModal" hidden><div class="panel">
+  <button class="x btn btn-k sm" data-close aria-label="Tutup">✕</button>
+  <h3>Join TelorIjo</h3><p>Salin alamat ini lalu tambahkan di menu Servers Minecraft.</p>
+  <div class="ipr"><small>IP</small><code id="mIp"></code><button class="btn btn-k sm press" data-copy="ip"><span class="cl">COPY</span></button></div>
+  <div class="ipr"><small>PORT</small><code id="mPort"></code><button class="btn btn-k sm press" data-copy="port"><span class="cl">COPY</span></button></div>
+  <button class="btn btn-r big press" data-copy="both"><span class="cl">COPY IP:PORT</span></button>
+</div></div>
+
+<!-- MODAL RULES -->
+<div class="mod" id="rulesModal" hidden><div class="panel lgp">
+  <button class="x btn btn-k sm" data-close aria-label="Tutup">✕</button>
+  <h3>Server Rules</h3><p>Patuhi aturan ini supaya semua nyaman main.</p>
+  <div id="rulesList"></div>
+</div></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
